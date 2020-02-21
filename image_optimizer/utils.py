@@ -68,7 +68,7 @@ def image_optimizer(image_data, output_size=None, resize_method=None):
                 )
 
             output_image = Image.new(
-                'RGBA',
+                'RGB',
                 output_size,
                 BACKGROUND_TRANSPARENT
             )
