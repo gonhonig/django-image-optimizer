@@ -88,8 +88,7 @@ def image_optimizer(image_data, output_size=None, resize_method=None):
             output_image = image
 
         # If the file extension is JPEG, convert the output_image to RGB
-        if extension == 'JPEG':
-            output_image = output_image.convert("RGB")
+        output_image = output_image.convert("RGB")
 
         output_image.save(
             bytes_io,
